@@ -1,0 +1,9 @@
+ http://localhost:5173/
+ linear-gradient(to top, rgba(60, 47, 192, .8) 0%, transparent 100%)
+
+ linear-gradient(to right, #f7693c, #c74e45, #7d3785, #582d9f, #3928af);
+
+
+    background: linear-gradient(to right, rgba(17, 27, 50, 1.0), rgba(255, 255, 255, 0.0));
+
+#162340;
