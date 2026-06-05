@@ -272,7 +272,7 @@
      
 }
 .number-btn .air2 {
-  transform: translateX(20px);
+
   opacity: 1;
 }
 .number-btn:hover .air2{
@@ -320,6 +320,27 @@ top: 44%;
   display: flex;
   padding: 0px 50px;
   justify-content: space-between;
+}
+.card-img{
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+  
+}
+.blue-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: (to top, rgba(60, 47, 192, .8) 0%, transparent 100%);
+}
+.card-img img{
+  height: 200px;
+}
+.card-img:hover img{
+  transform: scale(1.05);
+  transition:  0.5s ease;
 }
 @media (max-width: 768px) {
   .slide {

@@ -226,7 +226,13 @@ const Landing = () => {
                     <img src='https://craftohtml.themezaa.com/images/demo-corporate-bg-01.png'></img>
                 </div>
             </div>
-
+            <div className='business-card'>
+                <div className='card-img'>
+                    <img src='https://craftohtml.themezaa.com/images/demo-corporate-slider-img-01.jpg'></img>
+                <div className='blue-overlay'></div>
+                </div>
+                
+            </div>
         </>
     )
 }
