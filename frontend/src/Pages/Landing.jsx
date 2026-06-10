@@ -233,6 +233,7 @@ const Landing = () => {
                 </div>
                 
             </div>
+            
         </>
     )
 }

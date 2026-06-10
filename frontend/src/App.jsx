@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom"
 import Landing from "./Pages/Landing"
+import Services from "./Pages/Services"
 
 
 function App() {
@@ -9,6 +10,8 @@ function App() {
     <>
    <Routes>
     <Route path="/" element={<Landing/>}></Route>
+    <Route path="/service" element={<Services/>}></Route>
+   
    </Routes>
       </>
   )

@@ -3,10 +3,16 @@ const app = express()
 app.use(express.json())
 const cors = require("cors")
 app.use(cors())
+const upload = require("./Middleware/Multer")
 
 const db = require("./Middleware/db")
-
-
+const prdrouter = require("./Routes/productroutes")
+app.use(prdrouter)
+app.use("/uploads" , require("express").static("uploads"))
+const disrouter = require("./Routes/disposalRoutes")
+app.use(disrouter)
+const serviceroute = require("./Routes/serviceroutes")
+app.use(serviceroute)
 app.listen(4000 , ()=>{
     console.log("server is running")
 })
