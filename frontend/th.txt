@@ -33,3 +33,18 @@
 
     &quot;images/demo-corporate-about-title-bg.jpg&quot
 
+  <div className="service-head">
+                <div className="service-img">
+                    <img
+                        src="https://craftohtml.themezaa.com/images/demo-corporate-services-title-bg.jpg"
+                        alt="Services"
+                    />
+
+                    <div className="service-overlay"></div>
+
+                    <div className="service-txt">
+                        <h1>Services</h1>
+                        <i className="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
+            </div>

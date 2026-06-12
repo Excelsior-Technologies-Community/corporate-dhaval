@@ -1,0 +1,99 @@
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+.nav-menu{
+    display: flex;
+    gap: 25px;
+    padding-top: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.nav-find{
+    display: flex;
+    gap: 10px;
+}
+.magnify{
+    padding-top: 10px;
+}
+.free{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    padding-left: 25px;
+    padding-top: 6px;
+    height: 40px;
+    border: 1px solid #eee;
+    width: 200px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+.msg{
+    position: absolute;
+    top: 20%;
+    left: 82%;
+}
+.nav-menu p:hover {
+    color: gray;
+}
+.free:hover {
+    background-color:#4738d3 ;
+    color: white;
+    cursor: pointer;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.service-box {
+  width: 250px;
+  background: #22345a;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 20px 22px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.service-item:last-child {
+  border-bottom: none;
+}
+
+.service-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.service-item i {
+  color: #fff;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+}
+
+.service-item h4 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.dropdown{
+    position: static;
+}
+.inner-menu{
+    position: absolute;
+     top: 15%;
+    left: 37%;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+}
+.dropdown:hover .inner-menu{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.6s ease;
+}

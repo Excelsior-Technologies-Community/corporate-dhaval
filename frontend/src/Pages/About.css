@@ -1,0 +1,276 @@
+.about-company {
+  width: 100%;
+  padding: 90px 8%;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.about-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 80px;
+  margin-bottom: 90px;
+}
+
+.about-left {
+  flex: 1;
+}
+
+.about-tag {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #f2f3fb;
+  color: #4338ca;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.about-left h2 {
+  font-size: 48px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #14213d;
+}
+
+.about-right {
+  flex: 1;
+  max-width: 550px;
+  margin-top: 70px;
+}
+
+.about-right p {
+  font-size: 18px;
+  line-height: 2;
+  color: #7b7b96;
+}
+
+.about-features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  text-align: center;
+}
+
+.feature-card i {
+  font-size: 54px;
+  color: #4338ca;
+  margin-bottom: 25px;
+}
+
+.feature-card h3 {
+  font-size: 21px;
+  color: #14213d;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.feature-card p {
+  color: #7b7b96;
+  font-size: 16px;
+  line-height: 1.8;
+}
+.feature-card img{
+    margin-bottom: 20px;
+}
+.project{
+    display: flex;
+    justify-content: center;
+}
+.project-inner{
+    width: 50%;
+    border-radius: 20px;
+    height: 50px;
+    padding-top: 12px;
+    display: flex;
+    font-weight: 700;
+    justify-content: center;
+    margin-top: 20px;
+    border: 1px solid #eee;
+}
+.project-inner i{
+    margin-top: 5px;
+}
+.project{
+    position: relative;
+}
+.company-value {
+  width: 100%;
+  padding: 100px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  background: #fff;
+}
+
+.company-left {
+  width: 50%;
+  position: relative;
+}
+
+.main-image {
+  width: 340px;
+  height: 390px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.small-image {
+  width: 260px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 6px;
+  position: absolute;
+  bottom: -60px;
+  right: 20px;
+}
+
+.experience-circle {
+  width: 180px;
+  height: 180px;
+  background: #4338ca;
+  border-radius: 50%;
+  position: absolute;
+  left: -70px;
+  top: 50px;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+}
+
+.experience-circle h2 {
+  font-size: 58px;
+  font-weight: 700;
+}
+
+.experience-circle p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.company-right {
+  width: 50%;
+}
+
+.value-tag {
+  display: inline-block;
+  padding: 12px 26px;
+  background: #f3f4fb;
+  color: #4338ca;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.company-right h2 {
+  font-size: 54px;
+  line-height: 1.05;
+  color: #162447;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+.company-right p {
+  font-size: 18px;
+  line-height: 2;
+  color: #7b7b96;
+  max-width: 620px;
+}
+
+.custom-navigation {
+  display: flex;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.custom-navigation button {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.custom-navigation button:hover {
+  background: #162447;
+  color: white;
+}
+
+.custom-navigation i {
+  font-size: 18px;
+}
+
+@media (max-width: 992px) {
+  .company-value {
+    flex-direction: column;
+  }
+
+  .company-left,
+  .company-right {
+    width: 100%;
+  }
+
+  .company-right h2 {
+    font-size: 44px;
+  }
+
+  .main-image {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .small-image {
+    width: 220px;
+    right: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-top {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .about-left h2 {
+    font-size: 46px;
+  }
+
+  .about-features {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-company {
+    padding: 60px 5%;
+  }
+
+  .about-left h2 {
+    font-size: 36px;
+  }
+
+  .about-right p {
+    font-size: 16px;
+  }
+
+  .about-features {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card i {
+    font-size: 46px;
+  }
+}

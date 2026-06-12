@@ -5,12 +5,14 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "../Pages/Landing.css"
+import Nav from '../Components/Nav';
 
 const Landing = () => {
     const prevRef = useRef(null);
     const nextRef = useRef(null);
     return (
         <>
+        <Nav/>
             <div className="hero-slider">
                 <div className="custom-prev" ref={prevRef}>
                     <i className="fa-solid fa-chevron-left"></i>
